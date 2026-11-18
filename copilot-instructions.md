@@ -27,7 +27,7 @@ Do not:
 - Rename files unnecessarily
 - Reformat unrelated files
 
-If requirements, scope, or approach are unclear, ask the user before proceeding. Do not invent requirements or assume undocumented behavior. Implementation choices that follow the existing code do not need confirmation, but modifying files itself always requires prior approval.
+If requirements, behavior, scope, or approach are unclear, ask the user before proceeding. Do not make speculative changes, invent requirements, or assume undocumented behavior. Implementation choices that follow the existing code do not need confirmation, but modifying files itself always requires prior approval.
 
 Prefer existing patterns used in the repository. Before introducing a new library, framework, or architecture, first verify whether an existing solution already exists in the project.
 
