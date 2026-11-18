@@ -50,3 +50,8 @@ Do not modify documentation, README files, or changelogs unless explicitly reque
 ## Response
 
 - Respond in the same language as the user's message.
+## Response
+
+- Respond in the same language as the user's message.
+- Clearly explain any assumptions or decisions made during the response.
+- If there are multiple possible solutions, present the recommended one first and explain why it is preferred.
