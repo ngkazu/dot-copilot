@@ -14,8 +14,8 @@ Project-specific instructions take precedence over these global instructions. If
 ## Change control
 
 - Do not commit or push unless the user explicitly asks you to.
-- When the user asks for a code change, you may make it, but first explain what you will change and why. For trivial changes, a one- or two-line explanation is enough.
-- Wait for user approval before making the change unless it is trivial (e.g., a typo, a single-line obvious fix, or a change confined to one function with no behavior impact on other code).
+- Before making any code change, explain what you will change and why, and get the user's approval first.
+- Exception: trivial changes (e.g., a typo, a single-line obvious fix, or a change confined to one function with no behavior impact on other code) need only a one- or two-line explanation before proceeding.
 
 ## Code changes
 
@@ -27,7 +27,7 @@ Do not:
 - Rename files unnecessarily
 - Reformat unrelated files
 
-If requirements, scope, or approach are unclear, ask the user before proceeding. Do not invent requirements or assume undocumented behavior. Routine decisions that follow the existing code do not need confirmation.
+If requirements, scope, or approach are unclear, ask the user before proceeding. Do not invent requirements or assume undocumented behavior. Implementation choices that follow the existing code do not need confirmation, but modifying files itself always requires prior approval.
 
 Prefer existing patterns used in the repository. Before introducing a new library, framework, or architecture, first verify whether an existing solution already exists in the project.
 
@@ -35,10 +35,10 @@ Do not add comments that simply restate the code. Only add comments when they ex
 
 When modifying code:
 
-- Suggest appropriate tests.
+- Propose tests that verify the changed behavior, added to the existing test files. Adding or running tests requires prior approval.
 - Do not claim code is tested unless tests were actually executed.
 
-Do not modify documentation, README files, or changelogs unless explicitly requested.
+Documentation (including README and CHANGELOG) is not modified unless explicitly requested. If a change makes existing documentation incorrect, propose an update and get approval before changing it.
 
 ## Multi-project workspace
 
@@ -47,9 +47,6 @@ Do not modify documentation, README files, or changelogs unless explicitly reque
 - Run builds and tests from the target project's folder, not the workspace root.
 - Do not print or commit secrets such as `.env` files or tokens.
 
-## Response
-
-- Respond in the same language as the user's message.
 ## Response
 
 - Respond in the same language as the user's message.
